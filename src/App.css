@@ -1,24 +1,22 @@
 body {
   background-image: url("https://img.freepik.com/premium-photo/halloween-background-generative-ai_1000174-435.jpg");
-  background-size: 100% 100%;
+  background-size: cover; /* Cambiado a 'cover' para cubrir completamente el fondo */
   background-position: center center;
   background-attachment: fixed;
-  
+  margin: 0; /* Añadido para eliminar el margen predeterminado del cuerpo */
 }
 
 .winner-message {
-   background-color:  #534696;
-   background-position: center center;
-   background-position: 100% 100%;
-   width: 230px;
-   height: 90px;
-   margin-top: 50px;
-   margin-left: 44%;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-   font-size: 60px;
-   user-select: none;
-   border-radius: 40%;
-   
+  background-color: #534696;
+  width: 80%; /* Cambiado a porcentaje para hacerlo responsive */
+  max-width: 230px; /* Limita el ancho máximo */
+  height: 90px;
+  margin: 50px auto; /* Centra el mensaje verticalmente y ajusta el margen horizontalmente */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw; /* Tamaño de fuente responsive basado en el ancho de la pantalla */
+  user-select: none;
+  border-radius: 50%; /* Corregido para un círculo perfecto */
 }
